@@ -1,0 +1,54 @@
+// Font import
+@font-face {
+    font-family: 'Basic';
+    src: url('../assets/fonts/Basic-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'DaysOne-Regular';
+    src: url('../assets/fonts/DaysOne-Regular.ttf');
+  }
+
+// Font variables
+$global-font:'Basic';
+  
+// Colors variables 
+$black:#303030;
+$white:#FEFCED;
+$pink:#FFAABB;
+$blue: #4E95F3;
+$green:#9BE2BB;
+$coral:#FB8A53;
+$yellow: #F9F28A;
+
+
+// Mixins
+// Titles
+@mixin Title{
+    font-family: 'DaysOne-Regular';
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+  
+  @mixin smallTitle{
+    font-family: 'DaysOne-Regular';
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  @mixin button{
+    text-align: center;
+    margin: auto;
+    background: v.$yellow;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: v.$black;
+    display: flex;
+    justify-content: center;
+    line-height: 1em;
+    padding: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
